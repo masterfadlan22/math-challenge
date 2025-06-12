@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Math Challenge - Level SMP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="rainbow">Math Challenge - Level SMP</h1>
+  <div id="level-select">
+    <label for="difficulty">Pilih Tingkat Kesulitan:</label>
+    <select id="difficulty">
+      <option value="easy">Mudah</option>
+      <option value="medium">Sedang</option>
+      <option value="hard">Sulit</option>
+    </select>
+    <button onclick="startGame()">Mulai</button>
+  </div>
+
+  <div id="game-container" style="display:none;">
+    <div id="score">Skor: 0</div>
+    <div id="timer">Waktu: 60</div>
+    <div id="question">Loading...</div>
+    <input type="number" id="answer" placeholder="Jawab di sini" />
+    <br/>
+    <button onclick="submitAnswer()">Kirim</button>
+    <button onclick="startGame()">Mulai Ulang</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
